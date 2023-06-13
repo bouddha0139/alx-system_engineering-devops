@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "${1//[Cc]}"
+tr -d '[Cc]' <<< "$1"
