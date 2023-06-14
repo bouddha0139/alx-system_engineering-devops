@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Check if the file is executable, and if not, make it executable
+if [[ ! -x "$1" ]]; then
+  chmod +x "$1"
+fi
+
+# Git commands
+git add .
+git commit -m "$2"
+git push
+
